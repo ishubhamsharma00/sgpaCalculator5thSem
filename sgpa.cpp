@@ -5,13 +5,13 @@ using namespace std;
 int main()
 {
     cout<<"Enter name of grade of 12 subjects serially: (IN CAPITAL LETTERS ONLY)\n";
-    vector<string> grade;
+    string grade[12];
     float credits[] = {2,3,3,2,3,3,1,1,1,1,1,0.5};
     string g;
     for(int i=0;i<12;i++)
     {
         cin>>g;
-        grade.push_back(g);
+        grade[i]=g;
     }
     cout<<endl;
     float total_points=0;
